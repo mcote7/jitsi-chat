@@ -16,7 +16,7 @@ const App = () => {
     <div className="container-fluid main-container">
       <div className="row my-5">
         <div className="col">
-          <h1 className="my-title">hey there buddy</h1>
+          <div className="my-wrap main-title">&#8943;&#8886; Hey there buddy &#8887;&#8943;</div>
           <hr className="mb-5 mt-4 myHR"></hr>
             <div className="jisti-container">
               { onCall ?
@@ -29,10 +29,13 @@ const App = () => {
                 />
               :
                 <>
-                  <h1>Crate a Meeting</h1>
-                  <input type='text' placeholder='Room name' value={roomName} onChange={e => setRoomName(e.target.value)} />
-                  <input type='text' placeholder='Your name' value={displayName} onChange={e => setDisplayName(e.target.value)} />
-                  <button onClick={() => setOnCall(true)}> Let&apos;s start!</button>
+                  <div className="my-wrap">Crate a Meeting</div>
+                  <div className="my-wrap">
+                    <input type='text' placeholder='Room name' value={roomName} onChange={e => setRoomName(e.target.value)} />
+                    <input type='text' placeholder='Your name' value={displayName} onChange={e => setDisplayName(e.target.value)} />
+                    <button onClick={() => setOnCall(true)}> Let&apos;s start!</button>
+                  </div>
+
                 </>
               }
             </div>

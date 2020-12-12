@@ -37,11 +37,18 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
   filter: blur(0px);
 }
 
+.main-title {
+  border: 1px solid $my-purple;
+}
+
 .myHR {
   border-color: $my-purple;
 }
 
-.my-title {
+.my-wrap {
+  @include center-all();
+  flex-direction: column;
+  font-size: 2rem;
   padding: 1rem;
   border-radius: 0.25rem;
   background-color: $my-purple-trans;
