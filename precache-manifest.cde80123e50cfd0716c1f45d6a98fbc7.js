@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "361314a6af959a0d444c237cfc1e4e62",
+    "revision": "fc8eac202fbeb55411040513277106e1",
     "url": "/jitsi-chat/index.html"
   },
   {
