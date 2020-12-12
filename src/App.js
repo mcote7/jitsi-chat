@@ -31,9 +31,11 @@ const App = () => {
                 <>
                   <div className="my-wrap">
                     <p className="my-ptag">Create / Join a Meeting</p>
-                    <input className="my-input" type='text' placeholder='Room name' value={roomName} onChange={e => setRoomName(e.target.value)} />
-                    <input className="my-input" type='text' placeholder='Your name' value={displayName} onChange={e => setDisplayName(e.target.value)} />
-                    <button className="my-button" onClick={() => setOnCall(true)}>CONNECT</button>
+                    <input className="my-input" type='text' placeholder='Room name' value={roomName} onChange={e => setRoomName(e.target.value)}/>
+                    <input className="my-input" type='text' placeholder='Your name' value={displayName} onChange={e => setDisplayName(e.target.value)}/>
+                    <button className="my-button" onClick={() => setOnCall(true)}>
+                      <div className="connect"><span className="px-4">CONNECT</span></div>
+                    </button>
                   </div>
                 </>
               }

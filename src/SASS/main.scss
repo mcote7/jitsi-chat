@@ -67,7 +67,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
   border-radius: 0.25rem;
   border-color: $my-purple;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.25s;
+  transition: 0.5s;
 }
 .my-input::placeholder {
   color: $my-purple-trans;
@@ -84,21 +84,38 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 // ------------end input
 .my-button {
   margin: 1rem;
-  padding: 0.25rem 4rem;
+  padding: 0.25rem 2rem;
   border-radius: 0.25rem;
   font-size: 1rem;
   font-weight: bold;
   border: 1px solid $my-purple;
   color: $my-purple-trans;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.25s;
+  transition: 1s;
 }
 .my-button:hover {
   color: white;
   background-color: $my-purple-trans;
   border-color: white;
+  > .connect::before, .connect::after {
+    color: $my-purple;
+    transform: scale(1.5);
+    animation: spin 0.55s ease-in-out;
+  }
 }
-
+.connect::before {
+  display: inline-block;
+  content: '\2234';
+}
+.connect::after {
+  display: inline-block;
+  content: '\2234';
+}
+@keyframes spin {
+  from {transform: scale(1) rotate(0deg);}
+  to {transform: scale(2) rotate(360deg);}
+}
+// 
 .my-name {
   font-size: small;
   -webkit-box-reflect: below 15px linear-gradient(
