@@ -39,7 +39,7 @@ const App = () => {
               }
             </div>
           <hr className="mt-5 mb-4 myHR"></hr>
-          <div className="my-wrap p-1 pb-2" style={{fontSize: 'small'}}>2021 michael cote &infin;</div>
+          <div className="my-wrap p-1 pb-2 my-name">2021 michael cote &infin;</div>
         </div>
       </div>
     </div>

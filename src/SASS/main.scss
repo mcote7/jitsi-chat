@@ -76,7 +76,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
   cursor: text;
 }
 .my-input:focus, .my-input:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: $my-purple-trans;
   &::placeholder {
     color: $my-purple;
   }
@@ -89,6 +89,20 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
   font-size: 1rem;
   font-weight: bold;
   border: 1px solid $my-purple;
+  color: $my-purple-trans;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.25s;
+}
+.my-button:hover {
   color: white;
   background-color: $my-purple-trans;
+  border-color: white;
+}
+
+.my-name {
+  font-size: small;
+  -webkit-box-reflect: below 15px linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.8));
 }
