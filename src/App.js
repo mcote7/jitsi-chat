@@ -16,7 +16,7 @@ const App = () => {
     <div className="container-fluid main-container">
       <div className="row my-5">
         <div className="col">
-          <div className="my-wrap main-title">&#8943;&#8886; Hey there buddy &#8887;&#8943;</div>
+          <div className="my-wrap">&#8943;&#8886; Hey there buddy &#8887;&#8943;</div>
           <hr className="mb-5 mt-4 myHR"></hr>
             <div className="jisti-container">
               { onCall ?
@@ -29,17 +29,17 @@ const App = () => {
                 />
               :
                 <>
-                  <div className="my-wrap">Crate a Meeting</div>
                   <div className="my-wrap">
-                    <input type='text' placeholder='Room name' value={roomName} onChange={e => setRoomName(e.target.value)} />
-                    <input type='text' placeholder='Your name' value={displayName} onChange={e => setDisplayName(e.target.value)} />
-                    <button onClick={() => setOnCall(true)}> Let&apos;s start!</button>
+                    <p className="my-ptag">Create / Join a Meeting</p>
+                    <input className="my-input" type='text' placeholder='Room name' value={roomName} onChange={e => setRoomName(e.target.value)} />
+                    <input className="my-input" type='text' placeholder='Your name' value={displayName} onChange={e => setDisplayName(e.target.value)} />
+                    <button className="my-button" onClick={() => setOnCall(true)}>CONNECT</button>
                   </div>
-
                 </>
               }
             </div>
-          <hr className="mt-5 myHR"></hr>
+          <hr className="mt-5 mb-4 myHR"></hr>
+          <div className="my-wrap p-1 pb-2" style={{fontSize: 'small'}}>2021 michael cote &infin;</div>
         </div>
       </div>
     </div>
