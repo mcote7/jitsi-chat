@@ -1,0 +1,48 @@
+//variables
+$my-purple: hsl(275, 100%, 48%);
+$my-purple-trans: hsla(275, 100%, 48%, 0.15);
+
+//mix-ins
+@mixin center-all {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+//selectors
+.main-container {
+  @include center-all;
+}
+.main-container::before {
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: url('../assets/bg_img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1982;
+
+  mask-image: linear-gradient(to bottom,
+  rgba(0,0,0,0),
+  rgba(0,0,0,1),
+  rgba(0,0,0,1),
+  rgba(0,0,0,0));
+  opacity: 0.45;
+  filter: blur(0px);
+}
+
+.myHR {
+  border-color: $my-purple;
+}
+
+.my-title {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: $my-purple-trans;
+}
