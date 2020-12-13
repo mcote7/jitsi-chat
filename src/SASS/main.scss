@@ -14,6 +14,11 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 .main-container {
   @include center-all;
 }
+@media only screen and (max-width: 450px) {
+  .main-container {
+    margin: 5rem 0rem;
+  }
+}
 .main-container:before {
   content: '';
   height: 130vh;
