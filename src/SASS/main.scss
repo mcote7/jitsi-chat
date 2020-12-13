@@ -43,12 +43,18 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 
 .my-wrap {
   @include center-all();
+  width: 80vw;
   border: 1px solid $my-purple;
   flex-direction: column;
   font-size: 2rem;
   padding: 1rem;
   border-radius: 0.25rem;
   background-color: $my-purple-trans;
+  animation: grow 1.25s steps(1250);
+}
+@keyframes grow {
+  from {transform: scaleX(0); opacity: 0;}
+  to {transform: scaleX(1); opacity: 1;}
 }
 
 .my-ptag {
@@ -130,4 +136,14 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
+}
+
+// jitsy container---
+
+#react-jitsi-container {
+  height: 380px!important;
+  width: 80vw!important;
+}
+#react-jitsi-frame {
+
 }
