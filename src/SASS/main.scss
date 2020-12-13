@@ -123,7 +123,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 }
 // 
 .my-name {
-  cursor: no-drop;
+  cursor: pointer;
   font-size: small;
   -webkit-box-reflect: below 5px linear-gradient(
     to bottom,
@@ -136,8 +136,13 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
+    >.goBack {
+      color:  hsl(108, 100%, 68%);
+    }
 }
-
+.goBack {
+  display: contents;
+}
 // jitsy container---
 
 #react-jitsi-container {

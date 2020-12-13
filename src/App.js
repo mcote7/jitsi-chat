@@ -35,9 +35,8 @@ const App = () => {
                   roomName={roomName}
                   displayName={displayName}
                   loadingComponent={Loader}
-                  onAPILoad={JitsiMeetAPI => console.log('Good Morning everyone!')}
+                  onAPILoad={JitsiMeetAPI => console.log('Good Morning everyone!', JitsiMeetAPI)}
                   config={{prejoinPageEnabled: false, disableDeepLinking: true}}
-                  interfaceConfig={onclose = ()=>{console.log("CLOSED")}}
                 />
               :
               <div className="my-wrap" style={{height: '320px'}}>
@@ -51,7 +50,9 @@ const App = () => {
               }
             </div>
           <hr className={onCall?"my-1 myHR":"mt-4 mb-5 myHR"}></hr>
-          <div onClick={()=>setOnCall(false)}className="my-wrap p-1 pb-2 my-name">2021 michael cote &infin;&nbsp;{onCall?'GO BACK':''}</div>
+          <div onClick={()=>setOnCall(false)}
+            className="my-wrap p-1 pb-2 my-name">2021 michael cote &infin;&nbsp;
+            {onCall?<span className="goBack ml-5">GO BACK&nbsp;&#8676;</span>:''}</div>
         </div>
       </div>
     </div>
