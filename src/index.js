@@ -9,6 +9,9 @@ import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 
+import { gsap, CSSPlugin, CSSRulePlugin} from "gsap/all";
+gsap.registerPlugin(CSSPlugin, CSSRulePlugin);
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

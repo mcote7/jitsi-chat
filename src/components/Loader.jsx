@@ -15,7 +15,7 @@ const Loader = () => {
   `;
 
   return (
-    <GridLoader color={'#8f00f5cc'} size={55} margin={5} css={override}/>
+    <GridLoader color={'#ffffff80'} size={55} margin={5} css={override}/>
   );
 }
 
