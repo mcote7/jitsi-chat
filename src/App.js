@@ -36,7 +36,7 @@ const App = () => {
                   displayName={displayName}
                   loadingComponent={Loader}
                   onAPILoad={JitsiMeetAPI => console.log('Good Morning everyone!')}
-                  config={{prejoinPageEnabled: false}}
+                  config={{prejoinPageEnabled: false, disableDeepLinking: true}}
                 />
               :
               <div className="my-wrap" style={{height: '380px'}}>
