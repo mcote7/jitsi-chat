@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/jitsi-chat/precache-manifest.1d94d06bb01f6ab9f663ca6ab3a1b270.js"
+  "/jitsi-chat/precache-manifest.bf759ba8bfebacadf014fd2ae853d06c.js"
 );
 
 self.addEventListener('message', (event) => {
