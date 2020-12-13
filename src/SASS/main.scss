@@ -16,16 +16,16 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 }
 .main-container:before {
   content: '';
-  height: 100vh;
-  width: 100%;
+  height: 130vh;
+  width: 130%;
   background-image: url('../assets/bg_img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
-  top: 0px;
+  top: -100px;
   right: 0px;
   bottom: 0px;
-  left: 0px;
+  left: -100px;
   z-index: -1982;
 
   mask-image: linear-gradient(to bottom,
@@ -47,7 +47,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
   border: 1px solid $my-purple;
   flex-direction: column;
   font-size: 2rem;
-  padding: 1rem;
+  padding-bottom: 0.5rem;
   border-radius: 0.25rem;
   background-color: $my-purple-trans;
   animation: grow 1.25s steps(1250);
@@ -125,14 +125,14 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 .my-name {
   cursor: no-drop;
   font-size: small;
-  -webkit-box-reflect: below 15px linear-gradient(
+  -webkit-box-reflect: below 5px linear-gradient(
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.8));
     transition: 2s;
 }
 .my-name:hover {
-  -webkit-box-reflect: below 15px linear-gradient(
+  -webkit-box-reflect: below 5px linear-gradient(
     to bottom,
     transparent,
     rgba(255, 255, 255, 0.4));
@@ -141,7 +141,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 // jitsy container---
 
 #react-jitsi-container {
-  height: 380px!important;
+  height: 540px!important;
   width: 80vw!important;
 }
 #react-jitsi-frame {
