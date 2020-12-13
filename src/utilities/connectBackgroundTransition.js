@@ -10,4 +10,5 @@ export const connectBackgroundTransitionGroup = {
     const main_BG = CSSRulePlugin.getRule(".main-container:before");
     TweenLite.to(main_BG, 2, {cssRule:{opacity: 0.45, scale: 1, rotate: -7, filter: "blur(0px)"}});
   }
+
 };
