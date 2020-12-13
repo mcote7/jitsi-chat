@@ -16,7 +16,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 }
 @media only screen and (max-width: 450px) {
   .main-container {
-    margin: 5rem 0rem;
+    margin: 1rem auto 5rem auto;
   }
 }
 .main-container:before {
