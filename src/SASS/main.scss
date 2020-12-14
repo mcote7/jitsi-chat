@@ -121,7 +121,7 @@ $my-green: hsl(108, 100%, 68%);
   background-color: $my-purple-trans;
   border-color: white;
   > .connect::before, .connect::after {
-    color: $my-green;
+    color: $my-purple;
     transform: scale(1.5);
     animation: spin 0.55s ease-in-out;
   }
