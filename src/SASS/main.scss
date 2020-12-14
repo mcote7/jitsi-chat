@@ -2,6 +2,8 @@
 $my-purple: hsl(275, 100%, 48%);
 $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 
+$my-green: hsl(108, 100%, 68%);
+
 //mix-ins
 @mixin center-all {
   display: flex;
@@ -17,6 +19,9 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 @media only screen and (max-width: 450px) {
   .main-container {
     margin: 1rem auto 5rem auto;
+  }
+  .main-container:before {
+    width: 150%!important;
   }
 }
 .main-container:before {
@@ -44,14 +49,21 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
 
 .myHR {
   border-color: $my-purple;
+  animation: grow 1.25s steps(1250);
 }
 
+@media only screen and (max-width: 325px) {
+  .my-wrap {
+    width: 95vw!important;
+  }
+}
 .my-wrap {
   @include center-all();
   width: 80vw;
   border: 1px solid $my-purple;
   flex-direction: column;
   font-size: 2rem;
+  margin: 0 auto;
   padding-bottom: 0.5rem;
   border-radius: 0.25rem;
   background-color: $my-purple-trans;
@@ -81,7 +93,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
   transition: 0.75s;
 }
 .my-input::placeholder {
-  color: $my-purple-trans;
+  color: rgba(255, 255, 255, 0.65);
 }
 .my-input:focus {
   cursor: text;
@@ -100,7 +112,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
   font-size: 1rem;
   font-weight: bold;
   border: 1px solid $my-purple;
-  color: $my-purple-trans;
+  color: rgba(255, 255, 255, 0.65);
   background-color: rgba(0, 0, 0, 0.5);
   transition: 1s;
 }
@@ -109,7 +121,7 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
   background-color: $my-purple-trans;
   border-color: white;
   > .connect::before, .connect::after {
-    color: $my-purple;
+    color: $my-green;
     transform: scale(1.5);
     animation: spin 0.55s ease-in-out;
   }
@@ -142,18 +154,23 @@ $my-purple-trans: hsla(275, 100%, 48%, 0.15);
     transparent,
     rgba(255, 255, 255, 0.4));
     >.goBack {
-      color:  hsl(108, 100%, 68%);
+      color:  $my-green;
     }
 }
 .goBack {
   display: contents;
 }
-// jitsy container---
 
+
+
+
+
+// jitsy container---
 #react-jitsi-container {
   height: 540px!important;
-  width: 80vw!important;
+  width: 95vw!important;
+  animation: grow 1.25s steps(1250);
 }
-// #react-jitsi-frame {
-
-// }
+#react-jitsi-frame {
+  animation: grow 1.25s steps(1250);
+}
