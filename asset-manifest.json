@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jitsi-chat/static/css/main.29121570.chunk.css",
+    "main.css": "/jitsi-chat/static/css/main.5b0137c8.chunk.css",
     "main.js": "/jitsi-chat/static/js/main.d3eb90f2.chunk.js",
     "main.js.map": "/jitsi-chat/static/js/main.d3eb90f2.chunk.js.map",
     "runtime-main.js": "/jitsi-chat/static/js/runtime-main.3609a5d4.js",
@@ -9,10 +9,10 @@
     "static/js/2.04eee079.chunk.js": "/jitsi-chat/static/js/2.04eee079.chunk.js",
     "static/js/2.04eee079.chunk.js.map": "/jitsi-chat/static/js/2.04eee079.chunk.js.map",
     "index.html": "/jitsi-chat/index.html",
-    "precache-manifest.2a9019acf721accc130fd4c62dad3e47.js": "/jitsi-chat/precache-manifest.2a9019acf721accc130fd4c62dad3e47.js",
+    "precache-manifest.e75c545fdee1602bf000df6d73e50f1d.js": "/jitsi-chat/precache-manifest.e75c545fdee1602bf000df6d73e50f1d.js",
     "service-worker.js": "/jitsi-chat/service-worker.js",
     "static/css/2.59aa5021.chunk.css.map": "/jitsi-chat/static/css/2.59aa5021.chunk.css.map",
-    "static/css/main.29121570.chunk.css.map": "/jitsi-chat/static/css/main.29121570.chunk.css.map",
+    "static/css/main.5b0137c8.chunk.css.map": "/jitsi-chat/static/css/main.5b0137c8.chunk.css.map",
     "static/js/2.04eee079.chunk.js.LICENSE.txt": "/jitsi-chat/static/js/2.04eee079.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/jitsi-chat/static/media/bg_img.decaf475.jpg",
     "static/media/font-awesome.css": "/jitsi-chat/static/media/fontawesome-webfont.fee66e71.woff"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.3609a5d4.js",
     "static/css/2.59aa5021.chunk.css",
     "static/js/2.04eee079.chunk.js",
-    "static/css/main.29121570.chunk.css",
+    "static/css/main.5b0137c8.chunk.css",
     "static/js/main.d3eb90f2.chunk.js"
   ]
 }
