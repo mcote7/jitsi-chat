@@ -43,8 +43,9 @@ $my-green: hsl(108, 100%, 68%);
   rgba(0,0,0,1),
   rgba(0,0,0,1),
   rgba(0,0,0,0));
-  opacity: 0.6;
-  filter: blur(0px);
+  opacity: 0;
+  filter: blur(12px);
+  transform: scale(1);
 }
 
 .myHR {
