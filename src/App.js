@@ -32,12 +32,32 @@ const App = () => {
           <hr className={onCall?"my-1 myHR":"mt-5 mb-4 myHR"}></hr>
             <div className="jisti-container">
               { onCall ?
+
                 <Jitsi
                   roomName={roomName}
                   displayName={displayName}
                   loadingComponent={Loader}
+
                   onAPILoad={JitsiMeetAPI => console.log('Good Morning everyone!', JitsiMeetAPI)}
-                  config={{prejoinPageEnabled: false, disableDeepLinking: true}}
+
+                  config={{
+                    prejoinPageEnabled: false,
+                    disableDeepLinking: true,
+                    transcribingEnabled: true
+                  }}
+
+                  interfaceConfig={{
+                    APP_NAME: 'Cotes Chat',
+                    SHOW_PROMOTIONAL_CLOSE_PAGE: false,
+                    DISABLE_TRANSCRIPTION_SUBTITLES: false,
+                    LANG_DETECTION: true,
+                    TOOLBAR_BUTTONS: ['microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
+                    'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'recording',
+                    'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
+                    'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
+                    'tileview', 'videobackgroundblur', 'download', 'help', 'mute-everyone'],
+                    TOOLBAR_ALWAYS_VISIBLE: true
+                  }}
                 />
               :
               <div className="my-wrap" style={{height: '320px'}}>
