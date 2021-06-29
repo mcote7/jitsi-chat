@@ -1,8 +1,18 @@
 //variables
-$my-purple: rgb(143, 0, 245);
-$my-purple-trans: rgba(143, 0, 245, 0.15);
 
-$my-green: hsl(108, 100%, 68%);
+$main-bg: hsl(0, 0%, 17%);
+$dark-bg-dark-shadow: hsl(0, 0%, 7%);
+$dark-bg-light-shadow: hsl(0, 0%, 27%);
+
+$text-color: rgba(255, 255, 255, 0.93);
+$text-color-secondary: rgba(255, 255, 255, 0.7);
+$text-color-disabled: rgba(255, 255, 255, 0.45);
+
+$primary: hsl(275, 100%, 48%);
+$secondary: hsl(108, 100%, 68%);
+
+// animations 
+
 
 //mix-ins
 @mixin center-all {
@@ -12,166 +22,95 @@ $my-green: hsl(108, 100%, 68%);
   align-items: center;
 }
 
+
 //selectors
 .main-container {
   @include center-all;
-}
-@media only screen and (max-width: 450px) {
-  .main-container {
-    margin: 1rem auto 5rem auto;
+  min-height: 100vh;
+  &::before {
+    content: '';
+    height: 130vh;
+    width: 130%;
+    background-image: url('../assets/bg_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: -100px;
+    right: 0px;
+    bottom: 0px;
+    left: -100px;
+    z-index: -1982;
+    
+    mask-image: linear-gradient(to bottom,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1),
+    rgba(0,0,0,1),
+    rgba(0,0,0,0));
+    opacity: 0;
+    filter: blur(12px);
+    transform: scale(1);
   }
-  .main-container:before {
-    width: 150%!important;
-  }
-}
-.main-container:before {
-  content: '';
-  height: 130vh;
-  width: 130%;
-  background-image: url('../assets/bg_img.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: -100px;
-  right: 0px;
-  bottom: 0px;
-  left: -100px;
-  z-index: -1982;
-
-  mask-image: linear-gradient(to bottom,
-  rgba(0,0,0,0),
-  rgba(0,0,0,1),
-  rgba(0,0,0,1),
-  rgba(0,0,0,0));
-  opacity: 0;
-  filter: blur(12px);
-  transform: scale(1);
-}
-
-.myHR {
-  border-color: $my-purple;
-  animation: grow 1.25s steps(1250);
-}
-
-@media only screen and (max-width: 325px) {
-  .my-wrap {
-    width: 95vw!important;
-  }
-}
-.my-wrap {
-  @include center-all();
-  width: 80vw;
-  border: 1px solid $my-purple;
-  flex-direction: column;
-  font-size: 2rem;
-  margin: 0 auto;
-  padding-bottom: 0.5rem;
-  border-radius: 0.25rem;
-  background-color: $my-purple-trans;
-  animation: grow 1.25s steps(1250);
-}
-@keyframes grow {
-  from {transform: scaleX(0); opacity: 0;}
-  to {transform: scaleX(1); opacity: 1;}
-}
-
-.my-ptag {
-  font-size: smaller;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid $my-purple;
-}
-// ---------------input
-.my-input {
-  cursor: pointer;
-  caret-color: white;
-  font-size: 1.25rem;
-  color: white;
-  margin: 0.5rem;
-  padding: 0.25rem 0.25rem 0.25rem 1rem;
-  border-radius: 0.25rem;
-  border-color: $my-purple;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.75s;
-}
-.my-input::placeholder {
-  color: rgba(255, 255, 255, 0.65);
-}
-.my-input:focus {
-  cursor: text;
-}
-.my-input:focus, .my-input:hover {
-  background-color: $my-purple-trans;
-  &::placeholder {
-    color: $my-purple;
-  }
-}
-// ------------end input
-.my-button {
-  margin: 1rem;
-  padding: 0.25rem 2rem;
-  border-radius: 0.25rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 1px solid $my-purple;
-  color: rgba(255, 255, 255, 0.65);
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 1s;
-}
-.my-button:hover {
-  color: white;
-  background-color: $my-purple-trans;
-  border-color: white;
-  > .connect::before, .connect::after {
-    color: $my-purple;
-    transform: scale(1.5);
-    animation: spin 0.55s ease-in-out;
-  }
-}
-.connect::before {
-  display: inline-block;
-  content: '\2234';
-}
-.connect::after {
-  display: inline-block;
-  content: '\2234';
-}
-@keyframes spin {
-  from {transform: scale(1) rotate(0deg);}
-  to {transform: scale(2) rotate(360deg);}
-}
-// 
-.my-name {
-  cursor: pointer;
-  font-size: small;
-  -webkit-box-reflect: below 5px linear-gradient(
-    to bottom,
-    transparent,
-    rgba(255, 255, 255, 0.8));
-    transition: 2s;
-}
-.my-name:hover {
-  -webkit-box-reflect: below 5px linear-gradient(
-    to bottom,
-    transparent,
-    rgba(255, 255, 255, 0.4));
-    >.goBack {
-      color:  $my-green;
+  
+  .header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1982;
+    height: 2.5rem;
+    background: linear-gradient(to right, $main-bg, transparent);
+    
+    .go-back {
+      display: flex;
+      align-items: center;
+      margin-left: 0.75rem;
+      color: $text-color;
     }
+  }
+  
+  .jitsi-container {
+    height: 100%;
+    width: 100%;
+    @include center-all;
+    
+    .call-form {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      width: fit-content;
+      background-color: $main-bg;
+      border-radius: 0.5rem;
+      padding: 4rem;
+      p {
+        // 
+      }
+      input {
+        // 
+      }
+      button {
+        // 
+      }
+    }
+  }
 }
-.goBack {
-  display: contents;
-}
 
+// jitsi container override ::: => {
 
-
-
-
-// jitsy container---
 #react-jitsi-container {
-  height: 540px!important;
-  width: 95vw!important;
-  animation: grow 1.25s steps(1250);
+  position: relative;
+  height: 100vh!important;
+  width: 100vw!important;
+  padding-top: 2.5rem!important;
 }
-#react-jitsi-frame {
-  animation: grow 1.25s steps(1250);
-}
+
+// #react-jitsi-frame {
+// }
+
+// }
+
+
+
+
+
+

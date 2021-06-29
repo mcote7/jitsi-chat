@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import GridLoader from "react-spinners/GridLoader";
+
 const Loader = () => {
   const override = css`
   margin: auto;
@@ -14,3 +15,4 @@ const Loader = () => {
   );
 }
 export default Loader;
+
