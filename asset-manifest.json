@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jitsi-chat/static/css/main.efba6985.chunk.css",
-    "main.js": "/jitsi-chat/static/js/main.d672560a.chunk.js",
-    "main.js.map": "/jitsi-chat/static/js/main.d672560a.chunk.js.map",
+    "main.js": "/jitsi-chat/static/js/main.2eb8b5b0.chunk.js",
+    "main.js.map": "/jitsi-chat/static/js/main.2eb8b5b0.chunk.js.map",
     "runtime-main.js": "/jitsi-chat/static/js/runtime-main.3609a5d4.js",
     "runtime-main.js.map": "/jitsi-chat/static/js/runtime-main.3609a5d4.js.map",
     "static/css/2.59aa5021.chunk.css": "/jitsi-chat/static/css/2.59aa5021.chunk.css",
     "static/js/2.ed3fb723.chunk.js": "/jitsi-chat/static/js/2.ed3fb723.chunk.js",
     "static/js/2.ed3fb723.chunk.js.map": "/jitsi-chat/static/js/2.ed3fb723.chunk.js.map",
     "index.html": "/jitsi-chat/index.html",
-    "precache-manifest.904b648d6f4423857d937c167f8080fa.js": "/jitsi-chat/precache-manifest.904b648d6f4423857d937c167f8080fa.js",
+    "precache-manifest.66cfb545ee0160046a24b6b129eb341e.js": "/jitsi-chat/precache-manifest.66cfb545ee0160046a24b6b129eb341e.js",
     "service-worker.js": "/jitsi-chat/service-worker.js",
     "static/css/2.59aa5021.chunk.css.map": "/jitsi-chat/static/css/2.59aa5021.chunk.css.map",
     "static/css/main.efba6985.chunk.css.map": "/jitsi-chat/static/css/main.efba6985.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.59aa5021.chunk.css",
     "static/js/2.ed3fb723.chunk.js",
     "static/css/main.efba6985.chunk.css",
-    "static/js/main.d672560a.chunk.js"
+    "static/js/main.2eb8b5b0.chunk.js"
   ]
 }

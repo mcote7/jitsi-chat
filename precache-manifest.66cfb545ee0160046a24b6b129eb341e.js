@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9fe85e44ce4ed6cd404aad39d6e8a4f",
+    "revision": "c19f8b6122f215e3cb3ce2dc5c4e7166",
     "url": "/jitsi-chat/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jitsi-chat/static/css/2.59aa5021.chunk.css"
   },
   {
-    "revision": "04b56bb1ce43e3e5b2fd",
+    "revision": "25a47c5899bd6206b17b",
     "url": "/jitsi-chat/static/css/main.efba6985.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jitsi-chat/static/js/2.ed3fb723.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04b56bb1ce43e3e5b2fd",
-    "url": "/jitsi-chat/static/js/main.d672560a.chunk.js"
+    "revision": "25a47c5899bd6206b17b",
+    "url": "/jitsi-chat/static/js/main.2eb8b5b0.chunk.js"
   },
   {
     "revision": "be4aa1d4c65fa8973f02",
