@@ -53,12 +53,12 @@ const App = () => {
               2021 michael cote &infin;&nbsp;
               {onCall?<span><button className="badge badge-secondary">GO BACK&nbsp;&larr;</button></span>:''}
             </div>
-            <span 
+            {/* <span 
               onClick={()=>setChat(!chat)}
               role="img" 
               className="ml-3"
               title="test-chat 🚧🚧🚧"
-              aria-label="fu">🧪</span>
+              aria-label="fu">🧪</span> */}
           </div>
           
           <div className="jitsi-container">
