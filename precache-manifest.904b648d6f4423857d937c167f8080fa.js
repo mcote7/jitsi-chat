@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c9247dcbc6bff089a1eba036d1974168",
+    "revision": "a9fe85e44ce4ed6cd404aad39d6e8a4f",
     "url": "/jitsi-chat/index.html"
   },
   {
-    "revision": "363de89be80be2757ead",
+    "revision": "36e80a931b83588b89dd",
     "url": "/jitsi-chat/static/css/2.59aa5021.chunk.css"
   },
   {
-    "revision": "4704fa34537b669c0600",
-    "url": "/jitsi-chat/static/css/main.718f6001.chunk.css"
+    "revision": "04b56bb1ce43e3e5b2fd",
+    "url": "/jitsi-chat/static/css/main.efba6985.chunk.css"
   },
   {
-    "revision": "363de89be80be2757ead",
-    "url": "/jitsi-chat/static/js/2.3deb37a5.chunk.js"
+    "revision": "36e80a931b83588b89dd",
+    "url": "/jitsi-chat/static/js/2.ed3fb723.chunk.js"
   },
   {
     "revision": "5730d1823f6b27077c677030967812c2",
-    "url": "/jitsi-chat/static/js/2.3deb37a5.chunk.js.LICENSE.txt"
+    "url": "/jitsi-chat/static/js/2.ed3fb723.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4704fa34537b669c0600",
-    "url": "/jitsi-chat/static/js/main.8fbf30a8.chunk.js"
+    "revision": "04b56bb1ce43e3e5b2fd",
+    "url": "/jitsi-chat/static/js/main.d672560a.chunk.js"
   },
   {
     "revision": "be4aa1d4c65fa8973f02",
@@ -50,5 +50,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/jitsi-chat/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  {
+    "revision": "4a25b735ec2e10f3531e239c59fa2f08",
+    "url": "/jitsi-chat/static/media/user.4a25b735.jpg"
   }
 ]);

@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/jitsi-chat/static/css/main.718f6001.chunk.css",
-    "main.js": "/jitsi-chat/static/js/main.8fbf30a8.chunk.js",
-    "main.js.map": "/jitsi-chat/static/js/main.8fbf30a8.chunk.js.map",
+    "main.css": "/jitsi-chat/static/css/main.efba6985.chunk.css",
+    "main.js": "/jitsi-chat/static/js/main.d672560a.chunk.js",
+    "main.js.map": "/jitsi-chat/static/js/main.d672560a.chunk.js.map",
     "runtime-main.js": "/jitsi-chat/static/js/runtime-main.3609a5d4.js",
     "runtime-main.js.map": "/jitsi-chat/static/js/runtime-main.3609a5d4.js.map",
     "static/css/2.59aa5021.chunk.css": "/jitsi-chat/static/css/2.59aa5021.chunk.css",
-    "static/js/2.3deb37a5.chunk.js": "/jitsi-chat/static/js/2.3deb37a5.chunk.js",
-    "static/js/2.3deb37a5.chunk.js.map": "/jitsi-chat/static/js/2.3deb37a5.chunk.js.map",
+    "static/js/2.ed3fb723.chunk.js": "/jitsi-chat/static/js/2.ed3fb723.chunk.js",
+    "static/js/2.ed3fb723.chunk.js.map": "/jitsi-chat/static/js/2.ed3fb723.chunk.js.map",
     "index.html": "/jitsi-chat/index.html",
-    "precache-manifest.30d9e17a7267588c8e8487dd4068c242.js": "/jitsi-chat/precache-manifest.30d9e17a7267588c8e8487dd4068c242.js",
+    "precache-manifest.904b648d6f4423857d937c167f8080fa.js": "/jitsi-chat/precache-manifest.904b648d6f4423857d937c167f8080fa.js",
     "service-worker.js": "/jitsi-chat/service-worker.js",
     "static/css/2.59aa5021.chunk.css.map": "/jitsi-chat/static/css/2.59aa5021.chunk.css.map",
-    "static/css/main.718f6001.chunk.css.map": "/jitsi-chat/static/css/main.718f6001.chunk.css.map",
-    "static/js/2.3deb37a5.chunk.js.LICENSE.txt": "/jitsi-chat/static/js/2.3deb37a5.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/jitsi-chat/static/media/bg_img.decaf475.jpg",
+    "static/css/main.efba6985.chunk.css.map": "/jitsi-chat/static/css/main.efba6985.chunk.css.map",
+    "static/js/2.ed3fb723.chunk.js.LICENSE.txt": "/jitsi-chat/static/js/2.ed3fb723.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/jitsi-chat/static/media/user.4a25b735.jpg",
     "static/media/font-awesome.css": "/jitsi-chat/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.3609a5d4.js",
     "static/css/2.59aa5021.chunk.css",
-    "static/js/2.3deb37a5.chunk.js",
-    "static/css/main.718f6001.chunk.css",
-    "static/js/main.8fbf30a8.chunk.js"
+    "static/js/2.ed3fb723.chunk.js",
+    "static/css/main.efba6985.chunk.css",
+    "static/js/main.d672560a.chunk.js"
   ]
 }
