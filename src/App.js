@@ -14,6 +14,23 @@ const App = () => {
   const [roomName, setRoomName] = useState('');
   const [onCall, setOnCall] = useState(false);
 
+  const [chat, setChat] = useState(false);
+  const [messages, setMessages] = useState([]);
+
+  const sendMessage = (e) => {
+    e.persist();
+    console.log("e?:::",e)
+    if(e.key === 'Enter' && e.target.value !== "") {
+      let newMessage = e.target.value;
+      console.log("input?", newMessage)
+      setMessages([...messages, newMessage]);
+      e.target.value = "";
+      console.log("messages", messages)
+    } else {
+      return;
+    }
+  };
+
   useEffect(()=> {
     if(onCall === true) {
       connectBackgroundTransitionGroup.onConnect();
@@ -34,8 +51,14 @@ const App = () => {
               className="go-back" 
               onClick={()=>setOnCall(false)}>
               2021 michael cote &infin;&nbsp;
-              {onCall?<span>GO BACK&nbsp;&#8676;</span>:''}
+              {onCall?<span><button className="badge badge-secondary">GO BACK&nbsp;&larr;</button></span>:''}
             </div>
+            <span 
+              onClick={()=>setChat(!chat)}
+              role="img" 
+              className="ml-3"
+              title="test-chat 🚧🚧🚧"
+              aria-label="fu">🧪</span>
           </div>
           
           <div className="jitsi-container">
@@ -69,30 +92,63 @@ const App = () => {
                 }}
               />
             :
-            <div className="call-form">
+            <div className="call-form p-4">
               
               <p>Create / Join a Room</p>
               
               <input 
                 type='text' 
+                className="form-control mb-3" 
                 placeholder='Room name' 
                 value={roomName} 
                 onChange={e => setRoomName(e.target.value)}/>
                 
               <input 
                 type='text' 
+                className="form-control mb-3" 
                 placeholder='Your name' 
                 value={displayName} 
                 onChange={e => setDisplayName(e.target.value)}/>
               
-              <button onClick={() => setOnCall(true)}>
-                CONNECT
+              <button 
+                className="btn btn-secondary" 
+                onClick={() => setOnCall(true)}>
+                CONNECT&nbsp;
+                <span><i className="fa fa-phone" aria-hidden="true"></i></span>
               </button>
             </div>
             }
           </div>
         </div>
       </div>
+      {chat ? 
+        <div className="chat">
+          <p>test chat</p>
+          <div className="messages-wrap mt-auto">
+            {messages.map((m, i) => {
+              return(
+                <div className="message-x">
+                  <div className="title-name">
+                    <div className="user"></div>
+                    <span>Michael Cote</span>
+                    <small>12:00 AM</small>
+                  </div>
+                  <p 
+                    className="chat-bubble"
+                    key={i}>
+                    <div className="content">{m}</div>
+                  </p>
+                </div>
+              ); 
+            })}
+          </div>
+          <input 
+            autoFocus={true}
+            onKeyPress={(e)=> sendMessage(e)}
+            className="message-input form-control mt-5"
+            type="text"/>
+        </div>
+      :""}
     </div>
   );
 };
